@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-comisiaria-application" />
+        <module name="app-comisiaria-adapter-in-apis-rest" />
+        <module name="app-comisiaria-adapter-out-apis-rest-httpclient-webclient" />
+        <module name="app-comisiaria-dominio" />
+        <module name="app-comisiaria-adapter-out-dbs-nosql-mongo-springdata" />
+        <module name="app-comisiaria-api-mongodb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dominio" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-comisiaria-api-mongodb" options="" />
+    </option>
+  </component>
+</project>
