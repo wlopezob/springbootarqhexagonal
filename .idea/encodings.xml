@@ -7,8 +7,12 @@
     <file url="file://$PROJECT_DIR$/app-comisiaria-adapter-out-apis-rest-httpclient-webclient/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-adapter-out-dbs-nosql-mongo-springdata/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-adapter-out-dbs-nosql-mongo-springdata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app-comisiaria-adapter-out-dbs-sql-mysql-springdata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app-comisiaria-adapter-out-dbs-sql-mysql-springdata/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-api-mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-api-mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app-comisiaria-api-mysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app-comisiaria-api-mysql/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-application/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-comisiaria-dominio/src/main/java" charset="UTF-8" />

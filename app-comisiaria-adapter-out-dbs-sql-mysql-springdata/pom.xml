@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>app-comisiaria-solucion</artifactId>
+        <groupId>pe.edu.galaxy.appcomisaria</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app-comisiaria-adapter-out-dbs-sql-mysql-springdata</artifactId>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <app-comisiaria-application.version>0.0.1-SNAPSHOT</app-comisiaria-application.version>
+        <spring-boot-starter-data-jpa.version>3.0.5</spring-boot-starter-data-jpa.version>
+        <mysql-connector-j.version>8.0.32</mysql-connector-j.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>pe.edu.galaxy.appcomisaria</groupId>
+            <artifactId>app-comisiaria-application</artifactId>
+            <version>${app-comisiaria-application.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>${spring-boot-starter-data-jpa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+            <version>${mysql-connector-j.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

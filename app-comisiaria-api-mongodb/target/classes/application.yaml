@@ -20,4 +20,4 @@ api_comisaria:
   host: seguridadciudadana.mininter.gob.pe
   origin: https://aplicaciones.mininter.gob.pe
 server:
-  port: 8089
+  port: 8091

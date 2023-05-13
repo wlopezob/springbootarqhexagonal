@@ -7,11 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="app-comisiaria-application" />
-        <module name="app-comisiaria-adapter-in-apis-rest" />
         <module name="app-comisiaria-adapter-out-apis-rest-httpclient-webclient" />
+        <module name="app-comisiaria-adapter-out-dbs-sql-mysql-springdata" />
+        <module name="app-comisiaria-api-mysql" />
         <module name="app-comisiaria-dominio" />
         <module name="app-comisiaria-adapter-out-dbs-nosql-mongo-springdata" />
+        <module name="app-comisiaria-application" />
+        <module name="app-comisiaria-adapter-in-apis-rest" />
         <module name="app-comisiaria-api-mongodb" />
       </profile>
     </annotationProcessing>
