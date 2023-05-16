@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.MongoId;
 import pe.edu.galaxy.appcomisaria.adapter.out.dbs.nosql.mongo.springdata.entity.base.GenericEntity;
 
 @Document(collection = "departamento")
@@ -16,7 +17,8 @@ import pe.edu.galaxy.appcomisaria.adapter.out.dbs.nosql.mongo.springdata.entity.
 @NoArgsConstructor
 @AllArgsConstructor
 public class DepartamentoDocument extends GenericEntity {
-  @Id
+  @MongoId
+  @Field("_id")
   private String id;
   @Field("id_dpto")
   private String idDpto;

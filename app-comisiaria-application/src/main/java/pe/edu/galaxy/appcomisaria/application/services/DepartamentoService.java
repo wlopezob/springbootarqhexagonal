@@ -20,7 +20,7 @@ public class DepartamentoService implements DepartamentoInsertAllUseCase {
     return departamentoDeleteAllPort.deleteAllDepartamento().flux()
       .flatMap(t -> departamentoGetAllCallApiPort.getAllDepartamento()
         .collectList()
-        .flatMapMany(t1 -> departamentoInsertAllPort.insertAllDepartamento(t1)));
+        .flatMapMany(departamentoInsertAllPort::insertAllDepartamento));
   }
 
 }

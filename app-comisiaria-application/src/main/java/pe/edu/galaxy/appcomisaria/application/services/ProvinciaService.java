@@ -21,6 +21,6 @@ public class ProvinciaService implements ProvinciaInsertAllUseCase {
     return provinicaDeleteAllPort.deleteAllProvincia().flux()
       .flatMap(b -> departamentoGetAllPort.getAllDepartamento().flatMapIterable(t -> t)
         .flatMap(dpto -> provinciaGetAllCallApiPort.getAllProvincia(dpto.getIdDpto())
-          .flatMap(list -> provinicaInsertAllPort.insertAllProvincia(list))).flatMapIterable(t -> t));
+          .flatMap(provinicaInsertAllPort::insertAllProvincia)).flatMapIterable(t -> t));
   }
 }

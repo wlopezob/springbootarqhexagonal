@@ -22,7 +22,7 @@ public class DistritoService implements DistritoInsertAllUseCase {
     return distritoDeleteAllPort.deleteAllDistrito().flux()
       .flatMap(b -> provinciaGetAllPort.getAllProvincia().flatMapIterable(t -> t)
         .flatMap(prov -> distritoGetAllCallApiPort.getAllDistrito(prov.getIdProv())
-          .flatMap(list -> distritoInsertAllPort.insertAllDistrito(list))))
+          .flatMap(distritoInsertAllPort::insertAllDistrito)))
       .flatMapIterable(t -> t);
   }
 }

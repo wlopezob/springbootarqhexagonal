@@ -57,11 +57,11 @@ import pe.edu.galaxy.appcomisaria.application.services.ProvinciaService;
 @Configuration
 public class GlobalConfiguration {
 
-//  @Bean
-//  DepartamentoRestControllerImpl departamentoRestControllerImpl(DepartamentoService departamentoService,
-//                                                                DepartamentoResponseMapper mapper) {
-//    return new DepartamentoRestControllerImpl(departamentoService, mapper);
-//  }
+  @Bean
+  DepartamentoRestControllerImpl departamentoRestControllerImpl(DepartamentoService departamentoService,
+                                                                DepartamentoResponseMapper mapper) {
+    return new DepartamentoRestControllerImpl(departamentoService, mapper);
+  }
 
   @Bean
   DepartamentoService departamentoService(DepartamentoDeleteAllPort departamentoDeleteAllPort,
@@ -82,12 +82,12 @@ public class GlobalConfiguration {
                                                             DepartamentoWebClientMapper mapper) {
     return new DepartamentoWebClientAdapter(departamentoWebClient, mapper);
   }
-//
-//  @Bean
-//  ProvinciaRestControllerImpl provinciaRestControllerImpl(ProvinciaService provinciaService,
-//                                                          ProvinciaResponseMapper mapper) {
-//    return new ProvinciaRestControllerImpl(provinciaService, mapper);
-//  }
+
+  @Bean
+  ProvinciaRestControllerImpl provinciaRestControllerImpl(ProvinciaService provinciaService,
+                                                          ProvinciaResponseMapper mapper) {
+    return new ProvinciaRestControllerImpl(provinciaService, mapper);
+  }
 
   @Bean
   ProvinciaService provinciaService(ProvinciaGetAllCallApiPort provinciaGetAllCallApiPort,
@@ -110,11 +110,12 @@ public class GlobalConfiguration {
     return new ProvinciaWebClientAdapter(provinciaWebClient, mapper);
   }
 
-//  @Bean
-//  DistritoRestControllerImpl distritoRestController(DistritoService distritoService,
-//                                                    DistritoResponseMapper mapper) {
-//    return new DistritoRestControllerImpl(distritoService, mapper);
-//  }
+
+  @Bean
+  DistritoRestControllerImpl distritoRestControllerImpl(DistritoService distritoService,
+                                                    DistritoResponseMapper mapper) {
+    return new DistritoRestControllerImpl(distritoService, mapper);
+  }
 
   @Bean
   DistritoService distritoService(DistritoGetAllCallApiPort distritoGetAllCallApiPort,
@@ -138,11 +139,11 @@ public class GlobalConfiguration {
     return new DistritoWebClientAdapter(distritoWebClient, mapper);
   }
 
-//  @Bean
-//  ComisariaRestControllerImpl comisariaRestController(ComisariaService distritoService,
-//                                                      ComisariaResponseMapper mapper) {
-//    return new ComisariaRestControllerImpl(distritoService, mapper);
-//  }
+  @Bean
+  ComisariaRestControllerImpl comisariaRestControllerImpl(ComisariaService distritoService,
+                                                      ComisariaResponseMapper mapper) {
+    return new ComisariaRestControllerImpl(distritoService, mapper);
+  }
 
   @Bean
   ComisariaService comisariaService(ComisariaCountCallApiPort comisariaCountCallApiPort,
